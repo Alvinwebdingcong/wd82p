@@ -1,0 +1,36 @@
+.main-container {
+  background-color: darkgray;
+  width: 350px;
+  height: 350px;
+  padding: 5em 10em;
+}
+.header {
+  display: flex;
+  justify-content: center;
+  color: rgb(5, 67, 201);
+}
+.main-container {
+  display: flex;
+  flex-direction: column;
+}
+.email-input {
+  font-style: italic;
+  font-size: large;
+  padding: 20px 0px;
+  text-align: center;
+}
+.hero-password {
+  font-style: italic;
+  font-size: large;
+  padding: 20px 0;
+  text-align: center;
+}
+.login-container {
+  padding: 10px 0;
+  font-style: italic;
+  display: flex;
+  justify-content: center;
+  width: 400px;
+  height: 30px;
+  color: aqua;
+}
