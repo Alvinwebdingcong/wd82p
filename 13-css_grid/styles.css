@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.grid-container {
+  border: 1px solid black;
+
+  display: grid;
+  grid-template-columns: 50px 50px;
+  grid-template-rows: 50px 50px;
+  gap: 10px;
+  justify-content: center;
+}
+.grid-container div {
+  background-color: antiquewhite;
+}
