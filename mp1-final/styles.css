@@ -3,16 +3,21 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
   padding-top: 90px;
+  background: linear-gradient(135deg, #2980b9, #6ab1d7);
+  color: #333;
+  font-family: Arial, Helvetica, sans-serif;
 }
+
 .header {
   margin-top: 20px;
 }
 .header-content {
   background-color: rgb(240, 236, 7);
 }
-nav {
+.navigation {
   position: fixed;
   top: 0;
   left: 0;
@@ -41,9 +46,6 @@ nav {
   color: white;
   cursor: pointer;
 }
-.button {
-  color: skyblue;
-}
 nav ul {
   list-style: none;
   display: flex;
@@ -63,42 +65,57 @@ nav li:hover {
   .dropdown-button {
     display: block;
   }
-
-  nav ul {
+  .header-content {
+    text-align: center;
+  }
+  .navigation ul {
     display: none;
     flex-direction: column;
     background-color: #ece3e3;
     position: absolute;
     top: 100%;
-    left: 0;
-    width: 100%;
+    right: 0;
+    width: 15%;
     padding: 10px;
+    align-items: end;
   }
   .dropdown-button:focus + ul {
     display: flex;
+    align-items: center;
   }
 
-  nav li {
+  .navigation li {
     font-size: 0.9rem;
     margin: 5px 0;
+  }
+  .about-section {
+    background-size: cover; /* Adjust as needed */
+    background-repeat: no-repeat;
+  }
+  #about {
+    padding: 20px;
   }
 }
 .about-section {
   background-image: url("https://scontent.fdvo1-2.fna.fbcdn.net/v/t39.30808-6/361324003_778447244069645_9076518562000238653_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=e3f864&_nc_eui2=AeGeg0nuy1yozHkBsqXO4EukaCvAMjJdK-toK8AyMl0r6-UvlsoPUezql3bOahRvdYzTCUir8w4XGZeHaEVV3Zjz&_nc_ohc=t4FOVCZwF3MAX-HVCft&_nc_ht=scontent.fdvo1-2.fna&oh=00_AfDj9kU7VVfNuDRUx2MUDte2nUfkO4FXUFuqkXrbqN-JQg&oe=64EC80A8");
   background-size: cover; /* Adjust as needed */
-  background-position: center center; /* Adjust as needed */
+  background-position: bottom; /* Adjust as needed */
   color: #131212; /* Set text color for better contrast */
   padding: 20px; /* Adjust padding as needed */
   margin-bottom: 10px;
 }
-
-/* Responsive Background */
-@media screen and (max-width: 768px) {
-  .about-section {
-    background-size: cover; /* Adjust as needed */
-    background-repeat: no-repeat;
-  }
+.content-title {
+  color: white;
 }
+.content {
+  color: black;
+  text-shadow: 2px solid white;
+  font-size: 18px;
+}
+.button {
+  color: rgb(234, 234, 236);
+}
+
 /* Content Section */
 #about {
   padding: 40px;
@@ -106,18 +123,11 @@ nav li:hover {
   color: rgb(255, 251, 251);
 }
 
-/* Media query for about */
-@media screen and (max-width: 768px) {
-  #about {
-    padding: 20px;
-  }
-}
-/* Add these styles to your styles.css file */
 /* Course Section */
 #courses {
   display: flex;
-  justify-content: space-between; /* Distribute items evenly */
-  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+  justify-content: space-between;
+  flex-wrap: wrap;
   margin-top: 40px;
 }
 
@@ -130,6 +140,7 @@ nav li:hover {
   box-sizing: border-box;
   transition: transform 0.3s ease;
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
 }
 .course-box .button {
   display: inline-block;
@@ -154,22 +165,29 @@ nav li:hover {
   background-color: #e65100;
 }
 /* Responsive Course Boxes */
-@media screen and (max-width: 768px) {
+@media screen and (mix-width: 301px) {
   .course-box {
     flex-basis: calc(
       50% - 20px
     ); /* Two items per row with spacing on smaller screens */
   }
-  .course-box:last-child {
-    margin-left: auto;
-    margin-right: auto;
-  }
 }
-
-.footer {
-  background-color: gray;
-  text-align: center;
-  padding: 0.5px;
+@media screen and (max-width: 851px) {
+  #courses {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .course-box {
+    flex-basis: calc(33.33% - 20px);
+    margin-bottom: 20px;
+  }
+  .course-box:nth-child(4),
+  .course-box:nth-child(5) {
+    flex-basis: calc(50% - 20px);
+  }
+  .header-content {
+    text-align: center;
+  }
 }
 #enrollment-form {
   padding: 40px;
@@ -223,4 +241,9 @@ nav li:hover {
 
 #enrollment-form button:hover {
   background-color: #e65100; /* Darker color on hover */
+}
+.footer {
+  background-color: gray;
+  text-align: center;
+  padding: 0.5px;
 }
