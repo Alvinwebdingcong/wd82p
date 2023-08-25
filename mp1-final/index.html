@@ -103,10 +103,37 @@
       </div>
     </section>
 
-    <!-- More sections here: contact, blogs, library -->
+    <section id="enrollment-form">
+      <h2>Enrollment Form</h2>
+      <form>
+        <label for="full-name">Full Name:</label>
+        <input type="text" id="full-name" name="full-name" required />
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="contact-number">Contact Number:</label>
+        <input type="tel" id="contact-number" name="contact-number" required />
+
+        <label for="course">Course Chosen:</label>
+        <select id="course" name="course" required>
+          <option value="" disabled selected>Select a course</option>
+          <option value="information-tech">Information Technology</option>
+          <option value="education-math">Education Math</option>
+          <option value="education-english">Education English</option>
+          <option value="education-english">Senior High</option>
+          <option value="education-english">Elementary Education</option>
+        </select>
+
+        <label for="remarks">Remarks:</label>
+        <textarea id="remarks" name="remarks"></textarea>
+
+        <button type="submit" class="button">Submit</button>
+      </form>
+    </section>
 
     <footer class="footer">
-      <p>&copy; Ave Maria Collge . All rights reserved.</p>
+      <p>&copy; Ave Maria College . All rights reserved.</p>
     </footer>
   </body>
 </html>
