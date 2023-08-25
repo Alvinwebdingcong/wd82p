@@ -6,7 +6,7 @@
 
 body {
   padding-top: 90px;
-  background: linear-gradient(135deg, #2980b9, #6ab1d7);
+  background: linear-gradient(135deg, #0987db, #0598e7);
   color: #333;
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -14,8 +14,11 @@ body {
 .header {
   margin-top: 20px;
 }
-.header-content {
-  background-color: rgb(240, 236, 7);
+.header-container {
+  width: 100%;
+  text-align: center;
+  padding: 5px 0 0 0;
+  color: yellow;
 }
 .navigation {
   position: fixed;
@@ -28,7 +31,7 @@ body {
   padding: 10px;
   background-color: #8a8888;
   color: #fff;
-  z-index: 1000; /* Ensures the nav is on top of other elements */
+  z-index: 1000;
 }
 .logo img {
   width: 5%;
@@ -71,7 +74,7 @@ nav li:hover {
   .navigation ul {
     display: none;
     flex-direction: column;
-    background-color: #ece3e3;
+    background-color: rgb(228, 195, 7);
     position: absolute;
     top: 100%;
     right: 0;
@@ -92,6 +95,9 @@ nav li:hover {
     background-size: cover; /* Adjust as needed */
     background-repeat: no-repeat;
   }
+  .content-title {
+    color: black;
+  }
   #about {
     padding: 20px;
   }
@@ -102,15 +108,13 @@ nav li:hover {
   background-position: bottom; /* Adjust as needed */
   color: #131212; /* Set text color for better contrast */
   padding: 20px; /* Adjust padding as needed */
-  margin-bottom: 10px;
-}
-.content-title {
-  color: white;
+  margin-bottom: 20px;
 }
 .content {
   color: black;
   text-shadow: 2px solid white;
   font-size: 18px;
+  text-align: justify;
 }
 .button {
   color: rgb(234, 234, 236);
@@ -122,7 +126,12 @@ nav li:hover {
   margin-top: 20px;
   color: rgb(255, 251, 251);
 }
-
+.course-content-container {
+  width: 100%;
+  text-align: center;
+  text-decoration: underline;
+  color: black;
+}
 /* Course Section */
 #courses {
   display: flex;
@@ -141,6 +150,7 @@ nav li:hover {
   transition: transform 0.3s ease;
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
+  text-align: center;
 }
 .course-box .button {
   display: inline-block;
@@ -163,14 +173,6 @@ nav li:hover {
 }
 .course-box .button:hover {
   background-color: #e65100;
-}
-/* Responsive Course Boxes */
-@media screen and (mix-width: 301px) {
-  .course-box {
-    flex-basis: calc(
-      50% - 20px
-    ); /* Two items per row with spacing on smaller screens */
-  }
 }
 @media screen and (max-width: 851px) {
   #courses {
