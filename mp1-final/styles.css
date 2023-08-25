@@ -10,7 +10,7 @@ body {
   margin-top: 20px;
 }
 .header-content {
-  background-color: gray;
+  background-color: rgb(240, 236, 7);
 }
 nav {
   position: fixed;
@@ -26,7 +26,7 @@ nav {
   z-index: 1000; /* Ensures the nav is on top of other elements */
 }
 .logo img {
-  width: 5%;
+  width: 7%;
   height: auto;
 }
 .logo {
