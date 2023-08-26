@@ -107,7 +107,7 @@ nav li:hover {
     margin: 5px 0;
   }
   .about-section {
-    background-size: cover; /* Adjust as needed */
+    background-size: cover;
     background-repeat: no-repeat;
   }
   .content-title {
@@ -119,10 +119,10 @@ nav li:hover {
 }
 .about-section {
   background-image: url("https://scontent.fdvo1-2.fna.fbcdn.net/v/t39.30808-6/361324003_778447244069645_9076518562000238653_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=e3f864&_nc_eui2=AeGeg0nuy1yozHkBsqXO4EukaCvAMjJdK-toK8AyMl0r6-UvlsoPUezql3bOahRvdYzTCUir8w4XGZeHaEVV3Zjz&_nc_ohc=t4FOVCZwF3MAX-HVCft&_nc_ht=scontent.fdvo1-2.fna&oh=00_AfDj9kU7VVfNuDRUx2MUDte2nUfkO4FXUFuqkXrbqN-JQg&oe=64EC80A8");
-  background-size: cover; /* Adjust as needed */
-  background-position: bottom; /* Adjust as needed */
-  color: #131212; /* Set text color for better contrast */
-  padding: 20px; /* Adjust padding as needed */
+  background-size: cover;
+  background-position: bottom;
+  color: #131212;
+  padding: 20px;
   margin-bottom: 20px;
 }
 .content {
@@ -155,7 +155,7 @@ nav li:hover {
   flex-wrap: wrap;
   margin-top: 40px;
 }
-
+/*course-box responsive code*/
 @media only screen and (min-width: 360px) and (max-width: 960px) {
   .course-box1,
   .course-box2,
@@ -521,7 +521,7 @@ nav li:hover {
 }
 
 /*Enrollment part*/
-#enrollment-form {
+.enrollment-form {
   padding: 40px;
   background-color: #f5f5f5;
   border: 1px solid #ddd;
@@ -530,23 +530,23 @@ nav li:hover {
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
 }
 
-#enrollment-form h2 {
+.enrollment-form h2 {
   font-size: 1.5rem;
   margin-bottom: 20px;
 }
 
-#enrollment-form form {
+.enrollment-form form {
   display: grid;
   gap: 20px;
 }
 
-#enrollment-form label {
+.enrollment-form label {
   font-weight: bold;
 }
 
-#enrollment-form input,
-#enrollment-form select,
-#enrollment-form textarea {
+.enrollment-form input,
+.enrollment-form select,
+.enrollment-form textarea {
   width: 100%;
   padding: 10px;
   border: 1px solid #ddd;
@@ -554,11 +554,7 @@ nav li:hover {
   font-size: 1rem;
 }
 
-#enrollment-form textarea {
-  resize: vertical;
-}
-
-#enrollment-form button {
+.enrollment-form button {
   padding: 10px 20px;
   background-color: #ff6600;
   color: #fff;
@@ -571,11 +567,11 @@ nav li:hover {
   transition: background-color 0.3s ease;
 }
 
-#enrollment-form button:hover {
-  background-color: #e65100; /* Darker color on hover */
+.enrollment-form button:hover {
+  background-color: #202020; /* Darker color on hover */
 }
 .footer {
   background-color: gray;
   text-align: center;
-  padding: 0.5px;
+  padding: 2px;
 }
