@@ -17,7 +17,7 @@
 // const food = cars.concat(vegetables);
 // console.log(food);
 
-const fruits = ["apple", "banana", "orange"];
+//const fruits = ["apple", "banana", "orange"];
 
 // for (initialization; condition; iteration ) {}
 // for (let i = 0; i < fruits.length; i++) {
@@ -30,7 +30,3 @@ const fruits = ["apple", "banana", "orange"];
 // for (let fruit of fruits) {
 // console.log(fruit);
 // }
-while (i < fruits.length) {
-  console.log(fruits);
-  i++;
-}
