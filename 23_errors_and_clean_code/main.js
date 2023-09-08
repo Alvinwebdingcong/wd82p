@@ -32,10 +32,12 @@
 // meaningful
 // descriptive
 // use a consistent vocabulary or naming convention
-
+// bad naming
 function getPlayeScore() {}
 function fetchPlayerName() {}
 function retrievePlayer1Tag() {}
+
+// good naming
 function getPlayeScore() {}
 function getPlayerName() {}
 function getPlayer1Tag() {}
