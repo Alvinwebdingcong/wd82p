@@ -4,6 +4,7 @@
   box-sizing: border-box;
   background: #0c0d0e;
   color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .game {
@@ -38,6 +39,14 @@
   margin-top: 1rem;
 }
 
+.turns-container {
+  display: flex;
+  gap: 10em;
+  margin-bottom: 40px;
+}
+.turns-container h2 {
+  font-size: 50px;
+}
 .options {
   display: flex;
   width: 50vw;

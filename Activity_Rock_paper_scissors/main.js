@@ -9,6 +9,8 @@ const game = () => {
     const scissorBtn = document.querySelector(".scissor_btn");
     const playerOptions = [rockBtn, paperBtn, scissorBtn];
     const computerOptions = ["rock", "paper", "scissors"];
+    const playerTurnLabel = document.getElementById("player-turn-label");
+    const computerTurnLabel = document.getElementById("computer-turn-label");
 
     playerOptions.forEach((option) => {
       option.addEventListener("click", function () {
@@ -32,6 +34,7 @@ const game = () => {
     const result = document.querySelector(".result");
     const playerScoreBoard = document.querySelector(".p-count");
     const computerScoreBoard = document.querySelector(".c-count");
+
     player = player.toLowerCase();
     computer = computer.toLowerCase();
     if (player === computer) {
