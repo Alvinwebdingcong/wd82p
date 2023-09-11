@@ -21,8 +21,8 @@ console.log(factorial);
 const numbers = ["one", "two", "three"];
 console.log(numbers);
 
-numbers.reverse();
-console.log(numbers);
+const backward = Math.reverse(numbers);
+console.log(backward);
 
 // 4.)Find the largest Number of an Array
 
