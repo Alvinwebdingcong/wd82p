@@ -86,3 +86,9 @@ button {
 h2 {
   text-align: center;
 }
+#add-book-btn {
+  width: 40%;
+}
+#close-modal-btn {
+  width: 40%;
+}
